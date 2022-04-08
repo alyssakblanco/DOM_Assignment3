@@ -29,14 +29,6 @@ function newColor() {
   background(r,g,b);
 }
 
-function newSlider(){
-  slider = createSlider(0, 255, 0);
-  val = slider.value();
-  console.log(val);
-  slider.position(10, 10);
-  slider.style('width', '15vw');
-}
-
 function changeCircleFill(){
   fill(r, val, b);
   circle(width/2 ,height/2, 500);
