@@ -6,12 +6,12 @@ function setup() {
 
   slider = createSlider(0, 255, 0);
   console.log(val);
-  slider.position(width/2, ((height/5)));
-  slider.style('width', '25vw');
+  slider.position(((width/2)-225), 100);
+  slider.style('width', '500px');
 
   button = createButton('change color');
-  button.position(width/2, ((height/5)*4));
-  button.style("width", "15vw");
+  button.position(((width/2)-100), 700);
+  button.style("width", "200px");
   button.mousePressed(reset);
 }
 
