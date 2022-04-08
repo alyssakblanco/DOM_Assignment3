@@ -10,7 +10,7 @@ function setup() {
   slider.style('width', '500px');
 
   button = createButton('change color');
-  button.position(((width/2)-100), 700);
+  button.position(((width/2)-100), 50);
   button.style("width", "200px");
   button.mousePressed(reset);
 }
