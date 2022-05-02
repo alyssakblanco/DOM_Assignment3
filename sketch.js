@@ -1,7 +1,9 @@
 let r,g,b,val;
 
 function setup() {
-  createCanvas(windowWidth, windowHeight);  
+  let canvas = createCanvas(windowWidth, windowHeight);  
+  canvas.position(0,0);
+  canvas.style("z-index", "-1");
   newColor();
 
   slider = createSlider(0, 255, 0);
@@ -36,4 +38,8 @@ function changeCircleFill(){
 
 function reset(){
   location.reload();
+}
+
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
 }
