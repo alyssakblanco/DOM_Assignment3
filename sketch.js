@@ -42,4 +42,5 @@ function reset(){
 
 function windowResized() {
   resizeCanvas(windowWidth, windowHeight);
+  background(r,g,b);
 }
